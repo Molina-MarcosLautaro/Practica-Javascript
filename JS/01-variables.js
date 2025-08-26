@@ -18,3 +18,10 @@ document.writeln("<h1 class='h1-color'>Hola mundo</h1>");
 // ventanas emergentes
 // alert("Practica de alert")
 
+// variable var - let - const
+const taiga = "https://tree.taiga.io/project/earias08-comision-web16/timeline";
+
+console.log(taiga);
+document.writeln("<p>"+taiga+"</p>");
+document.writeln(taiga);
+document.writeln("un nuevo texto");
