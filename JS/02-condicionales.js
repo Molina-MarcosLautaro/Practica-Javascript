@@ -19,12 +19,20 @@ if(condicion){
 // Pedir al usuario una edad y decir si es mayor de edad o no
 // 18 años es mayor de edad
 
-const edad = parseInt(prompt ('Ingrese su edad'))
-console.log(edad)
+const edad = parseInt(prompt("Ingrese su edad"));
+console.log(edad);
 
-if(edad >= 18){
-    document.writeln('Sos mayor de edad 👍')
-}else{
-    document.writeln('Sos menor de edad 👌')
+console.log(isNaN("Hola")); // true
+console.log(isNaN("18"));
+console.log(isNaN(18));
+// if(isNaN(edad) == true)
+if (isNaN(edad)) {
+  document.writeln("Edad no valida");
+} else {
+  // aqui estoy seguro que estoy trabajado con un numero
+  if (edad >= 18) {
+    document.writeln("Sos mayor de edad 👍");
+  } else {
+    document.writeln("Sos menor de edad 👌");
+  }
 }
-
